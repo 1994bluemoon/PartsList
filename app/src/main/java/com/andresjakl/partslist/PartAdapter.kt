@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.part_list_item.view.*
 
-class PartAdapter (val partItemList: List<PartData>, val clickListener: (PartData) -> Unit) :
+class PartAdapter (private val partItemList: List<PartData>, private val clickListener: (PartData) -> Unit) :
         RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {

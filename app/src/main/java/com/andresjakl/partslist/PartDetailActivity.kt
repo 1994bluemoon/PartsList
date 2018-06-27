@@ -11,10 +11,10 @@ class PartDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_part_detail)
 
-        var intentThatStartedThisActivity = getIntent()
+        val intentThatStartedThisActivity = intent
 
         if (intentThatStartedThisActivity.hasExtra(Intent.EXTRA_TEXT)) {
-            var partId = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_TEXT)
+            val partId = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_TEXT)
             tv_item_id.text = partId
         }
     }

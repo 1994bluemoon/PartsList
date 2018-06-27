@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
          * change the child layout size in the RecyclerView
          */
         rv_parts.hasFixedSize()
-        var testData = createTestData()
+        val testData = createTestData()
         //rv_parts.adapter = PartAdapter(testData)
 
         // Create the PartAdapter
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         // Kotlin Language Features
 
         // Create new class instance
-        var calcTest = ClassWithConstructorProperties(10, 20)
+        val calcTest = ClassWithConstructorProperties(10, 20)
         // Print calculation results
         Log.d("Tests", "Calculation result: " + calcTest.calculate())
 
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun createTestData() : List<PartData> {
-        var partList = ArrayList<PartData>()
+        val partList = ArrayList<PartData>()
         partList.add(PartData(100411, "LED Green 568 nm, 5mm"))
         partList.add(PartData(101119, "Aluminium Capacitor 4.7μF"))
         partList.add(PartData(101624, "Potentiometer 500kΩ"))
